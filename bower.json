@@ -1,0 +1,22 @@
+{
+  "name": "wokaiqiao",
+  "homepage": "https://github.com/Dawenster/wokaiqiao",
+  "authors": [
+    "David Wen <dstwen@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "> 6.0.0"
+  }
+}
