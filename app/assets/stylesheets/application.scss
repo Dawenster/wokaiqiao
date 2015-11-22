@@ -14,3 +14,10 @@
  *= require foundation-sites/dist/foundation.min.css
  *= require_self
  */
+
+@font-face {
+  font-family: 'pen-chinese';
+  src:url('pen-chinese.ttf');
+  font-weight: normal;
+  font-style: normal;
+}

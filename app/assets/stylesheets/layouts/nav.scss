@@ -1,0 +1,24 @@
+.top-bar {
+  z-index: 100;
+  position: absolute !important;
+  width: 100% !important;
+  background: transparent !important;
+
+  .top-bar-right {
+    right: 0px;
+    background: transparent;
+
+    a {
+      color: white;
+    }
+  }
+  
+  .menu {
+    background: transparent;
+
+    .menu-text {
+      font-size: 30px;
+      font-family: "pen-chinese";
+    }
+  }
+}
