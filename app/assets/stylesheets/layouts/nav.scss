@@ -4,6 +4,14 @@
   width: 100% !important;
   background: transparent !important;
 
+  .small-menu-text {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    text-shadow: #000 2px 2px 15px;
+  }
+
   .top-bar-right {
     right: 0px;
     background: transparent;

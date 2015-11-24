@@ -8,7 +8,6 @@
     <title>我开窍 &mdash; 快来“窍”一下！</title>
     
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
 
     <meta name="description" content="“我开窍”平台为您提供与行业专家、顶级顾问、学术权威直接对话的难得机会，让您安坐家中就能与经验证的成功专业人士通过电话会议商讨企业计划书、获得战略性建议、进行市场调研、学习专业技能、解决学术上的烦恼。" />
@@ -23,7 +22,17 @@
     <meta name="baidu-site-verification" content="0WgYIgWVxB" />
   </head>
   <body>
-    <%= render "layouts/nav" %>
-    <%= yield %>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-left" id="offCanvasMenu" data-off-canvas data-position="left">
+          <%= render "layouts/off_canvas" %>
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+          <%= render "layouts/nav" %>
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   </body>
 </html>

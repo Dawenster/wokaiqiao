@@ -12,8 +12,11 @@
  *
  *= require_tree .
  *= require foundation-sites/dist/foundation.min.css
+ *= require font-awesome
  *= require_self
  */
+
+@import "font-awesome";
 
 @font-face {
   font-family: 'pen-chinese';
