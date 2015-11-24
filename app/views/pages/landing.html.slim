@@ -3,37 +3,45 @@
   .landing-main-text
     | 听君一席话 胜读十年书
 
-.row.column.text-center
-  h2 Our Newest Products
-  hr/
-.row.small-up-2.large-up-4
-  .column
-    img.thumbnail src="http://placehold.it/300x400" /
-    h5 Nulla At Nulla Justo, Eget
-    p $400
-    a.button.expanded href="#"  Buy
-  .column
-    img.thumbnail src="http://placehold.it/300x400" /
-    h5 Nulla At Nulla Justo, Eget
-    p $400
-    a.button.expanded href="#"  Buy
-  .column
-    img.thumbnail src="http://placehold.it/300x400" /
-    h5 Nulla At Nulla Justo, Eget
-    p $400
-    a.button.expanded href="#"  Buy
-  .column
-    img.thumbnail src="http://placehold.it/300x400" /
-    h5 Nulla At Nulla Justo, Eget
-    p $400
-    a.button.expanded href="#"  Buy
-hr/
-.row.column
-  .callout.primary
-    h3 Really big special this week on items.
-hr/
+br
 
-.callout.large.secondary
+.row.column.text-center
+  h3
+    | “我开窍”平台为您提供与行业专家、顶级顾问、学术权威直接对话的难得机会，让您安坐家中就能与经验证的成功专业人士通过电话会议商讨企业计划书、获得战略性建议、进行市场调研、学习专业技能、解决学术上的烦恼。
+
+br
+
+.row.column.text-center
+  h3
+    b
+      | 我们目前的专家:
+
+br
+
+.row.small-up-2.large-up-4
+  - initial_featured_experts.each do |expert|
+    .column
+      img.thumbnail src="#{expert[:picture]}"
+      h5
+        b
+          = expert[:name]
+      p
+        = "每分钟: ¥#{expert[:rate]}"
+      p
+        b
+          | 专长领域:
+      p
+        = expert[:expertise]
+      p
+        b
+          | 现在 / 曾经 就职:
+      p
+        = expert[:work_experience]
+      a.button.success.expanded href="#"  Buy
+
+br
+
+.callout.large.secondary.landing-callout
   .row
     .large-4.columns
       h5 Vivamus Hendrerit Arcu Sed Erat Molestie
