@@ -18,9 +18,9 @@ br
 
 br
 
-.row.small-up-2.large-up-4
+.row
   - initial_featured_experts.each do |expert|
-    .column
+    .small-6.large-3.column
       img.thumbnail src="#{expert[:picture]}"
       h5
         b
@@ -37,6 +37,12 @@ br
           | 现在 / 曾经 就职:
       p
         = expert[:work_experience]
+
+      form
+        .row
+          .small-12.columns
+            input type="text" placeholder="邮箱, 微信户名, 或手机号"
+
       a.button.success.expanded href="#"  Buy
 
 br
