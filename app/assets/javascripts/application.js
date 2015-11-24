@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require foundation-sites/dist/foundation.min.js
+//= require angular
 //= require_tree .
