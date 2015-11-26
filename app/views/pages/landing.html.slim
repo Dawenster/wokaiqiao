@@ -39,14 +39,14 @@ br
       p
         = expert[:work_experience]
 
-      form
+      = form_tag book_path
         .row
           .small-12.columns
-            input type="text" placeholder="邮箱, 微信户名, 或手机号"
+            input type="hidden" value="#{expert[:name]}" name="name"
+            input type="hidden" value="#{expert[:rate]}" name="rate"
+            input type="text" placeholder="邮箱, 微信户名, 或手机号" name="contact_info"
 
-      a.button.success.expanded href="#"
-        b
-          | 让我开窍吧!
+        input.button.success.expanded type="submit" value="让我开窍吧!"
 
 br
 
