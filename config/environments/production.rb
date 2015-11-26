@@ -78,6 +78,8 @@ Rails.application.configure do
 
   # Email settings
   config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
   config.action_mailer.smtp_settings = {
     address:              'smtp.zoho.com',
     port:                 465,
@@ -85,6 +87,8 @@ Rails.application.configure do
     user_name:            'team@wokaiqiao.com',
     password:             ENV['EMAIL_PASSWORD'],
     authentication:       'plain',
+    tls:                  true,
+    ssl:                  true,
     enable_starttls_auto: true
   }
 end
