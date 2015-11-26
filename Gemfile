@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'angularjs-rails'
 gem 'coffee-rails', '~> 4.0.0'
+gem 'delayed_job_active_record'
 gem 'font-awesome-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
