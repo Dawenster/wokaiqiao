@@ -28,6 +28,7 @@
           <%= render "layouts/off_canvas" %>
         </div>
         <div class="off-canvas-content" data-off-canvas-content>
+          <%= render "layouts/alerts_and_notifications" if alert || notice %>
           <%= render "layouts/nav" %>
           <%= yield %>
         </div>
