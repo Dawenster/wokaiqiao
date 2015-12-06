@@ -23,6 +23,7 @@ br
   .small-12.large-10.large-offset-1.columns
     - featured_experts.each do |expert|
       = render "experts/list", expert: expert
+      hr
 
 br
 
@@ -33,28 +34,3 @@ br
       i.fa.fa-angle-double-right
 
 br
-
-.callout.large.secondary.landing-callout
-  .row
-    .large-4.columns
-      h5
-        | 我开窍
-      p
-        = "© #{Time.current.year}"
-    .large-3.large-offset-2.columns
-      ul.menu.vertical
-        li
-          a.footer-link href="#"
-            | 联络我们
-        li
-          a.footer-link href="#"
-            | 反馈意见
-
-    .large-3.columns
-      ul.menu.vertical
-        li
-          a.footer-link href="#"
-            | 快速登录
-        li
-          a.footer-link href="#"
-            | 法律声明

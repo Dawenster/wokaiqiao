@@ -1,24 +1,45 @@
 .top-bar {
-  z-index: 100;
-  position: absolute !important;
   width: 100% !important;
-  background: transparent !important;
+
+  &.landing {
+    z-index: 100;
+    position: absolute !important;
+    background: transparent !important;
+
+    .top-bar-right {
+      right: 0px;
+      background: transparent;
+
+      a {
+        color: white;
+      }
+    }
+
+    .menu-text {
+      a {
+        &.white {
+          color: white !important;
+        }
+      }
+    }
+
+    .small-menu-text {      
+      color: white;
+      text-shadow: #000 2px 2px 15px;
+    }
+  }
+
+  .top-bar-right {
+    a {
+      margin-top: 8px;
+      color: black;
+    }
+  }
 
   .small-menu-text {
     position: absolute;
     top: 10px;
     right: 10px;
-    text-shadow: #000 2px 2px 15px;
-    color: white;
-  }
-
-  .top-bar-right {
-    right: 0px;
-    background: transparent;
-
-    a {
-      color: white;
-    }
   }
   
   .menu {
@@ -31,10 +52,6 @@
       a {
         padding: 0px;
         color: black !important;
-
-        &.white {
-          color: white !important;
-        }
       }
     }
   }

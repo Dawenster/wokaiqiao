@@ -1,4 +1,8 @@
 module ApplicationHelper
+  def on_landing_page?
+    params[:controller] == 'pages' && params[:action] == 'landing'
+  end
+
   def featured_experts
     [
       {
