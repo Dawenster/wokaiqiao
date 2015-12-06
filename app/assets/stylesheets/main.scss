@@ -1,0 +1,9 @@
+.profile-circle {
+  border-radius: 50%;
+  background-repeat: no-repeat; 
+  background-position: center center; // Center image in the circle
+  background-size: cover; // Make sure it covers the circle, as there is no bg repeat
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
