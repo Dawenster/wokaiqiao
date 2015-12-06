@@ -1,0 +1,27 @@
+- all_experts.each do |expert|
+  .small-12.medium-6.large-3.column
+      img.thumbnail src="#{expert[:picture]}"
+      h5
+        b
+          = expert[:name]
+      p
+        = "每分钟: ¥#{expert[:rate]}"
+      p
+        b
+          | 专长领域:
+      p
+        = expert[:expertise]
+      p
+        b
+          | 现在 / 曾经 就职:
+      p
+        = expert[:work_experience]
+
+      = form_tag book_path
+        .row
+          .small-12.columns
+            input type="hidden" value="#{expert[:name]}" name="name"
+            input type="hidden" value="#{expert[:rate]}" name="rate"
+            input type="text" placeholder="邮箱, 微信户名, 或手机号" name="contact_info"
+
+        input.button.success.expanded type="submit" value="让我开窍吧!"  

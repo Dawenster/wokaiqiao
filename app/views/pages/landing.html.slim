@@ -46,7 +46,15 @@ br
             input type="hidden" value="#{expert[:rate]}" name="rate"
             input type="text" placeholder="邮箱, 微信户名, 或手机号" name="contact_info"
 
-        input.button.success.expanded type="submit" value="让我开窍吧!"
+        input.button.success.expanded type="submit" value="让我开窍吧!"  
+
+br
+
+.row.column.text-center
+  h5
+    a.button.secondary href="#{experts_path}"
+      | 全部专家 
+      i.fa.fa-angle-double-right
 
 br
 
