@@ -6,4 +6,21 @@
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+
+  @media only screen and (max-width: 40em) {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.button {
+  border-radius: 5px !important;
+}
+
+input {
+  border-radius: 5px !important;
+}
+
+.footer-link {
+  color: grey;
 }

@@ -20,14 +20,15 @@ br
 br
 
 .row
-  - featured_experts.each do |expert|
-    = render "experts/list", expert: expert
+  .small-12.large-10.large-offset-1.columns
+    - featured_experts.each do |expert|
+      = render "experts/list", expert: expert
 
 br
 
 .row.column.text-center
   h5
-    a.button.secondary href="#{experts_path}"
+    a.button.secondary.all-experts-link href="#{experts_path}"
       | 全部专家 
       i.fa.fa-angle-double-right
 
