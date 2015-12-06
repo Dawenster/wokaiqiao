@@ -7,6 +7,6 @@ class BookingsController < ApplicationController
       params[:contact_info]
     )
     flash[:notice] = "成功了! 我们会马上替您安排跟<strong>#{params[:name]}</strong>联络的时间."
-    redirect_to root_path
+    redirect_to request.referrer
   end
 end
