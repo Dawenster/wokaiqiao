@@ -1,10 +1,12 @@
 .top-bar {
   width: 100% !important;
+  border-bottom: 1px solid rgba(10,10,10,.25);
 
   &.landing {
     z-index: 100;
     position: absolute !important;
     background: transparent !important;
+    border-bottom: none;
 
     .top-bar-right {
       right: 0px;
