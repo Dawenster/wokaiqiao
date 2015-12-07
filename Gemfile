@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'actionview-encoded_mail_to'
 gem 'angularjs-rails'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'delayed_job_active_record'
