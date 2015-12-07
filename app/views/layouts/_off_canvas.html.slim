@@ -1,10 +1,12 @@
 ul.menu.vertical
   li
-    a href="#"
-      | 联络我们
+    a href="#{experts_path}"
+      | 全部专家
   li
-    a href="#"
+    = mail_to team_email, "联络我们", encode: "hex"
+  li
+    a href="#{feedback_path}"
       | 反馈意见
-  li
-    a href="#"
-      | 快速登录
+  / li
+  /   a href="#"
+  /     | 快速登录

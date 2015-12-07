@@ -14,7 +14,7 @@
         /   a.footer-link href="#"
         /     | 快速登录
         li
-          a.footer-link href="#"
+          a.footer-link href="#{feedback_path}"
             | 反馈意见
 
     .large-3.columns
@@ -22,5 +22,5 @@
         li
           = mail_to team_email, "联络我们", encode: "hex", class: "footer-link"
         li
-          a.footer-link href="#"
+          a.footer-link href="#{terms_path}"
             | 法律声明
