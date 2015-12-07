@@ -14,14 +14,14 @@
         / li
         /   a.footer-link href="#"
         /     | 快速登录
-        li
-          a.footer-link href="#{about_path}"
-            | 有关我们
+        / li
+        /   a.footer-link href="#{about_path}"
+        /     | 有关我们
 
     .large-3.columns
       ul.menu.vertical
         li
           = mail_to team_email, "联络我们", encode: "hex", class: "footer-link"
-        li
-          a.footer-link href="#{terms_path}"
-            | 法律声明
+        / li
+        /   a.footer-link href="#{terms_path}"
+        /     | 法律声明
