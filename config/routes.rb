@@ -5,6 +5,6 @@ Rails.application.routes.draw do
 
   post "book" => "bookings#create", as: :book
 
-  get "feedback" => "pages#feedback", as: :feedback
+  get "about" => "pages#about", as: :about
   get "terms" => "pages#terms", as: :terms
 end
