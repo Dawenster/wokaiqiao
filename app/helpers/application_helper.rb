@@ -173,4 +173,8 @@ module ApplicationHelper
       }
     ]
   end
+
+  def team_email
+    "team@wokaiqiao.com"
+  end
 end

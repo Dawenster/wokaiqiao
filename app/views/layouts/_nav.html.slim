@@ -17,8 +17,7 @@
         a href="#{experts_path}"
           | 全部专家
       li
-        a href="#"
-          | 联络我们
+        = mail_to team_email, "联络我们", encode: "hex"
       li
         a href="#"
           | 反馈意见

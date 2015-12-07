@@ -20,8 +20,7 @@
     .large-3.columns
       ul.menu.vertical
         li
-          a.footer-link href="#"
-            | 联络我们
+          = mail_to team_email, "联络我们", encode: "hex", class: "footer-link"
         li
           a.footer-link href="#"
             | 法律声明
