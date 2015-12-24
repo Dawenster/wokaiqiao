@@ -5,22 +5,22 @@
         i.fa.fa-bars.show-for-small-only data-toggle="offCanvasMenu"
         .hide-for-small-only
           a href="#{root_path}"
-            | 我开窍.com
+            | 我开窍
 
       li.menu-text.small-menu-text.show-for-small-only
         a.white href="#{root_path}"
-          | 我开窍.com
+          | 我开窍
 
   .top-bar-right
     ul.menu.hide-for-small-only
       li
         a href="#{experts_path}"
-          | 全部专家
+          | 找专家
       li
         = mail_to team_email, "联络我们", encode: "hex"
-      / li
-      /   a href="#{about_path}"
-      /     | 有关我们
+      li
+        a href="https://www.surveymonkey.com/r/K7KGTPQ" target="_blank"
+          | 反馈意见
       / li
       /   a href="#"
       /     | 快速登录
