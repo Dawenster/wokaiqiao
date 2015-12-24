@@ -1,35 +1,7 @@
 .top-bar {
   width: 100% !important;
   border-bottom: 1px solid rgba(10,10,10,.25);
-
-  &.landing {
-    z-index: 100;
-    position: absolute !important;
-    background: transparent !important;
-    border-bottom: none;
-
-    .top-bar-right {
-      right: 0px;
-      background: transparent;
-
-      a {
-        color: white;
-      }
-    }
-
-    .menu-text {
-      a {
-        &.white {
-          color: white !important;
-        }
-      }
-    }
-
-    .small-menu-text {      
-      color: white;
-      text-shadow: #000 2px 2px 15px;
-    }
-  }
+  background: white !important;
 
   .top-bar-right {
     a {
