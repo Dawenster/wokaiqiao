@@ -174,6 +174,35 @@ module ApplicationHelper
     ]
   end
 
+  def landing_carousel_slides
+    [
+      {
+        image: "https://s3-us-west-2.amazonaws.com/wokaiqiao/landing/business.jpg",
+        title: "生意上的问题一扫而空",
+        description: "找个行业专家，获得战略性建议，一切都变得简单。",
+        extra_classes: "right"
+      },
+      {
+        image: "https://s3-us-west-2.amazonaws.com/wokaiqiao/landing/relax.jpg",
+        title: "一通电话就解决了烦劳",
+        description: "有专家的指引，前路变得清晰，省去不必要的时间和花费。",
+        extra_classes: "center black"
+      },
+      {
+        image: "https://s3-us-west-2.amazonaws.com/wokaiqiao/landing/student.jpg",
+        title: "海外留学工作难不倒我",
+        description: "考虑到要不要到国外前，找个有国外经验的人问问就行，轻松又简单！",
+        extra_classes: "left"
+      },
+      {
+        image: "https://s3-us-west-2.amazonaws.com/wokaiqiao/landing/interview.jpg",
+        title: "面试可以更轻松",
+        description: "往往求职面谈前都十分紧张，如果有个行内的人问一下就太好了！",
+        extra_classes: "center"
+      }
+    ]
+  end
+
   def team_email
     "team@wokaiqiao.com"
   end

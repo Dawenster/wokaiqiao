@@ -79,6 +79,7 @@
   border-radius: 5px;
   padding: 10px;
   text-align: center;
+  margin: 20px 0px;
 
   .leading-column {
     font-size: 26px;
@@ -87,6 +88,51 @@
   .button {
     margin: 0px;
     font-weight: bold;
+  }
+}
+
+.landing-carousel-holder {
+  .carousel-slide {
+    .slide-text {
+      position: absolute;
+      color: white;
+      top: 200px;
+
+      &.right {
+        right: 20%;
+      }
+
+      &.left {
+        left: 20%;
+      }
+
+      &.center {
+        text-align: center;
+        width: 100%;
+      }
+
+      &.black {
+        color: black;
+      }
+    }
+
+    .slide-bottom-text {
+      position: absolute;
+      color: white;
+      bottom: 0px;
+      width: 100%;
+      padding: 10px;
+      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+      p {
+        margin-bottom: 0px;
+      }
+    }
+
+    @media only screen and (min-width: 40.063em) {
+      .owl-wrapper-outer {
+        height: 600px;
+      }
+    }
   }
 }
 

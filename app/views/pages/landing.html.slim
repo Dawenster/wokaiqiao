@@ -99,6 +99,8 @@ br
       a.button.primary
         | 找专家
 
+    br
+
     .small-12.large-8.large-offset-2.columns.end
       .landing-alert-message
         .row
@@ -110,6 +112,24 @@ br
           .small-12.medium-4.columns
             a.button.success
               | 成为专家
+
+br
+
+.landing-carousel-holder
+  #landing-carousel.owl-carousel ng-controller="LandingOrbitCtrl"
+    - landing_carousel_slides.each do |slide|
+      .carousel-slide
+        = image_tag "#{slide[:image]}", width: "100%"
+        .slide-text.show-for-medium class="#{slide[:extra_classes]}"
+          h3
+            = slide[:title]
+          p
+            = slide[:description]
+        .slide-bottom-text.show-for-small-only
+          h4
+            = slide[:title]
+          p
+            = slide[:description]
 
 br
 
@@ -135,3 +155,5 @@ br
       i.fa.fa-angle-double-right
 
 br
+
+#small-screen.show-for-small-only
