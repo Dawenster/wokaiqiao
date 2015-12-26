@@ -81,6 +81,16 @@
   text-align: center;
   margin: 20px 0px;
 
+  @media only screen and (min-width: 40.063em) {
+    .leading-column-parent {
+      margin-top: 15px;
+    }
+
+    .last-column-parent {
+      margin-top: 15px;
+    }
+  }
+
   .leading-column {
     font-size: 26px;
   }
@@ -88,6 +98,10 @@
   .button {
     margin: 0px;
     font-weight: bold;
+  }
+
+  p {
+    margin: 10px 0px;
   }
 }
 
