@@ -46,8 +46,7 @@ br
         li
           | 解决学术上的烦恼等等
 
-      a.button.secondary
-        | 联系我们
+      = mail_to team_email, "联系我们", encode: "hex", class: "button secondary"
 
     .small-12.medium-6.large-4.columns
       h5
@@ -109,8 +108,7 @@ br
           .small-12.medium-4.columns
             | 加入我开窍的专家团，成为用家学习对象的一份子吧！
           .small-12.medium-4.columns
-            a.button.success
-              | 成为专家
+            = mail_to team_email, "成为专家", encode: "hex", class: "button success", subject: "我想当专家", body: "名字: \n联络资料(邮箱, 微信户名, 或手机号): "
 
 br
 
