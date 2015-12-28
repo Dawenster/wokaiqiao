@@ -11,12 +11,12 @@ app.controller('ExpertListCtrl', ['$scope', 'Email', function($scope, Email) {
       var inputValue = $(inputs[i]).val()
       if (inputValue == "") {
         var helpTextId = $(inputs[i]).attr("aria-describedby")
-        $("#" + helpTextId).removeClass("hide")
+        form.find("#" + helpTextId).removeClass("hide")
         noErrors = false
       }
       if ($(inputs[i]).attr("name") == "contact_email" && !Email.validate(inputValue)) {
         var helpTextId = $(inputs[i]).attr("aria-describedby")
-        $("#" + helpTextId).removeClass("hide")
+        form.find("#" + helpTextId).removeClass("hide")
         noErrors = false
       }
     };
