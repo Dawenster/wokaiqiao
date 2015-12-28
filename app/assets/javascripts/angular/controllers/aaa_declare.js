@@ -1,1 +1,1 @@
-angular.module('wokaiqiao', [])
+angular.module('wokaiqiao', ['wokaiqiao.services'])
