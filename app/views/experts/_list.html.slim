@@ -55,7 +55,7 @@
       = form_tag book_path
         .row
           .small-12.columns
-            input type="hidden" value="#{expert[:expert_name]}" name="name"
+            input type="hidden" value="#{expert[:name]}" name="expert_name"
             input type="hidden" value="#{expert[:rate]}" name="rate"
             input type="text" placeholder="姓名" name="contact_name"
             input type="text" placeholder="邮箱" name="contact_email"
