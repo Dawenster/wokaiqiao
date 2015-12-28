@@ -55,10 +55,11 @@
       = form_tag book_path
         .row
           .small-12.columns
-            input type="hidden" value="#{expert[:name]}" name="name"
+            input type="hidden" value="#{expert[:expert_name]}" name="name"
             input type="hidden" value="#{expert[:rate]}" name="rate"
             input type="text" placeholder="姓名" name="contact_name"
-            input type="text" placeholder="邮箱, 微信户名, 或手机号" name="contact_info"
+            input type="text" placeholder="邮箱" name="contact_email"
+            input type="text" placeholder="最佳通话时间及日期" name="preferred_time"
             input type="text" placeholder="通话内容" name="contact_reason"
 
         input.button.primary.expanded type="submit" value="通话申请"
